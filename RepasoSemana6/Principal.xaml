@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepasoSemana6.Principal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Bienvedino" HorizontalOptions="CenterAndExpand" />            
+            <Button x:Name="BtnRegistrar" Text="Registrar" Clicked="BtnRegistrar_Clicked"/>
+            <Button x:Name="BtnListar" Text="Listar" Clicked="BtnListar_Clicked"/>
+            <Button x:Name="BtnActualizar" Text="Actualizar" Clicked="BtnActualizar_Clicked"/>
+            <Button x:Name="BtnEliminar" Text="Eliminar" Clicked="BtnEliminar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

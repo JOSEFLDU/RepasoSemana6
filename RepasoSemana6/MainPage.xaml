@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepasoSemana6.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="REGISTRO" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <Entry x:Name="TxtCodigo" Placeholder="Ingrese el Codigo" Keyboard="Numeric"/>
+        <Entry x:Name="TxtNombre" Placeholder="Ingrese el Nombre" />
+        <Entry x:Name="TxtApellido" Placeholder="Ingrese el Apellido"/>
+        <Entry x:Name="TxtEdad" Placeholder="Ingrese la Edad" Keyboard="Numeric"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="BtnInserrtar" Text="Insertar" Clicked="BtnInserrtar_Clicked"  Grid.Row="0" Grid.Column="0"/>
+            <Button x:Name="BtnRegresar" Text="Regresar" Clicked="BtnRegresar_Clicked" Grid.Row="0" Grid.Column="1"/>
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>
